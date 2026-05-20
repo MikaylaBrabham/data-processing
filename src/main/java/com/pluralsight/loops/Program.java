@@ -1,6 +1,7 @@
 package com.pluralsight.loops;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
@@ -19,6 +20,14 @@ public class Program {
 
 
         // insert scanner and prompt user for a name to search
+        Scanner myScanner = new Scanner (System.in);
+
+        //ask user to search for a first or last name
+        System.out.println("Please Enter The First Or Last Name Of The Person You're Searching For?");
+        String personName = myScanner.nextLine();
+
+
+
 
 
 
