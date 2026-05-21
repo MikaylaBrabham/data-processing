@@ -15,7 +15,7 @@ public class Program {
         people.add(new Person("Riley", "Freeman", 8));
         people.add(new Person("Robert", "Freeman", 62));
         people.add(new Person("Sarah", "Dubois", 35));
-        people.add(new Person("Uncle", "Ruckus", 5));
+        people.add(new Person("Uncle", "Ruckus", 58));
         people.add(new Person("Cindy", "McPhearson", 9));
         people.add(new Person("A Pimp ", "Named Slickback", 35));
         people.add(new Person("Thug", "Nificent", 37));
@@ -28,7 +28,7 @@ public class Program {
 
         //ask user to search for a first or last name
         System.out.println("Please Enter The First Or Last Name Of The Person You're Searching For?");
-        String peopleName = myScanner.nextLine().trim();
+        String peopleName = myScanner.nextLine().trim().toLowerCase();
 
 
         // create if else loop to ensure name is entered correctly
@@ -45,7 +45,7 @@ public class Program {
 
         //add if else to make sure it print out empty
         if (nameMatch.isEmpty()) {
-            System.out.println("No one is hereby that name.");
+            System.out.println("No one is here by that name.");
         } else {
             for (Person person : nameMatch) {
                 System.out.println(person);
@@ -65,7 +65,7 @@ public class Program {
                 oldieButGoldie = person;
             }
             //get youngest person
-            if (person.getAge() < oldieButGoldie.getAge()) {
+            if (person.getAge() < youngIpadKid.getAge()) {
                 youngIpadKid = person;
             }
         }
