@@ -41,7 +41,7 @@ public class Program {
             }
         }
         //display the name
-        System.out.println("The person your looking for is " + people);
+        System.out.println("The person your looking for is " + nameMatch);
 
         //add if else to make sure it print out empty
         if (nameMatch.isEmpty()) {
@@ -51,6 +51,20 @@ public class Program {
                 System.out.println(person);
             }
         }
+
+        //add average age of everyone in list
+
+        //display age
+
+
+        //get oldest person
+
+        //display oldest person
+
+
+        //get youngest person
+
+        //display youngest
 
 
 
