@@ -79,11 +79,5 @@ public class Program {
         //display youngest
         System.out.println("The youngest person's age is " + youngIpadKid);
 
-
-
-
-
-
-
     }
 }
