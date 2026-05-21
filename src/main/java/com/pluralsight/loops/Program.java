@@ -35,15 +35,23 @@ public class Program {
 
         //create a for loop to create a name who's word is a match
         List<Person> nameMatch = new ArrayList<>();
-
-
         for (Person person : people) {
-            if(person.getFirstName().equalsIgnoreCase(peopleName));
+            if(person.getFirstName().equalsIgnoreCase(peopleName) || person.getLastName().equalsIgnoreCase(peopleName)) {
+                nameMatch.add(person);
+            }
+        }
+        //display the name
+        System.out.println("The person your looking for is " + people);
 
+        //add if else to make sure it print out empty
+        if (nameMatch.isEmpty()) {
+            System.out.println("No one is hereby that name.");
+        } else {
+            for (Person person : nameMatch) {
+                System.out.println(person);
             }
         }
 
-        //display the name
 
 
 
