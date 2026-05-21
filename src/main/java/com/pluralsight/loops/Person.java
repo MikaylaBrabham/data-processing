@@ -21,24 +21,19 @@ public class Person {
         return FirstName;
     }
 
-    public void setFirstName(String firstName) {
-        FirstName = firstName;
-    }
-
     public String getLastName() {
         return LastName;
-    }
-
-    public void setLastName(String lastName) {
-        LastName = lastName;
     }
 
     public Integer getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    //add to string
+
+    @Override
+    public String toString() {
+        return FirstName + " " + LastName + ", age " +  age + ".";
     }
 }
-}
+
