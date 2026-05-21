@@ -51,20 +51,33 @@ public class Program {
                 System.out.println(person);
             }
         }
+        // add the variables and  make them equal to 0
+        int totalAges = 0;
+        Person oldieButGoldie = people.get(0);
+        Person youngIpadKid = people.get(0);
 
-        //add average age of everyone in list
+        for (Person person : people) {
+            //add average age of everyone in list
+            totalAges += person.getAge();
 
-        //display age
+            //get oldest person
+            if (person.getAge() > oldieButGoldie.getAge()) {
+                oldieButGoldie = person;
+            }
+            //get youngest person
+            if (person.getAge() < oldieButGoldie.getAge()) {
+                youngIpadKid = person;
+            }
+        }
 
-
-        //get oldest person
+        //display average age
+        double averageAge = (double) totalAges / people.size();
+        System.out.println("The average of all age's are " + averageAge);
 
         //display oldest person
-
-
-        //get youngest person
-
+        System.out.println("The oldest person's age  is " + oldieButGoldie);
         //display youngest
+        System.out.println("The youngest person's age is " + youngIpadKid);
 
 
 
